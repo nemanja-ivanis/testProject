@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/form', 'FormController@index');
+Route::post('/add-product', 'FormController@addProduct');
+
+
